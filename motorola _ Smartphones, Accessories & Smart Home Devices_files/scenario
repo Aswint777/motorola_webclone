@@ -1,0 +1,48 @@
+window.DigitalFeedback['https://digitalfeedback.us.confirmit.com/api/digitalfeedback/loader/prod/scenario?programKey=ngwAGv&scenarioId=6828&programVersion=101'] = function (api) {
+ConfirmitHelper.doSurvey = function() {
+  var showLog = true;
+  var cfprefixString = "CONF - Moto Comment Card Survey: ";
+  
+  var mdl;
+  try {
+    mdl = motoDataLayer.locale;
+  } catch (e) {
+    ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "motoDataLayer Missing");
+  }
+
+  var loc = document.location.href;
+  var loclc = loc.toLowerCase();
+
+  var dObj = {};
+  
+  if (mdl) {
+    mdllc = mdl.toLowerCase();
+    dObj.mdl = mdllc;
+    dObj.cc = mdllc.substr(0, 2);
+  }
+
+  dObj.l = ConfirmitHelper.lngcd;
+  dObj.im = ConfirmitHelper.ConfisMobile();
+  dObj.env = "L";
+  dObj.csr = screen.width + "x" + screen.height;
+  dObj.wiw = window.innerWidth;
+  dObj.curl = escape(document.location.href);
+  dObj.chn = escape(document.location.hostname);
+
+  var d1 = ConfirmitHelper.plc;
+  var d2 = new Date();
+  var topis = (d2 - d1) / 1000;
+
+  if (mdl) {
+    dObj.mdl = mdllc;
+  }
+  dObj.topis = topis;
+
+  api()
+    .container('default')
+    .survey('p872518358847')
+    .data(dObj)
+    .show();
+}
+
+};

@@ -1,0 +1,137 @@
+//Motorola
+
+!function(e,i){if(!e.pixie){var n=e.pixie=function(e,i,a){n.actionQueue.push({action:e,actionValue:i,params:a})};n.actionQueue=[];var a=i.createElement("script");a.async=!0,a.src="//acdn.adnxs.com/dmp/up/pixie.js";var t=i.getElementsByTagName("head")[0];t.insertBefore(a,t.firstChild)}}(window,document);
+pixie('init', '5510b296-c959-42f6-904c-5bcf232498c7');
+pixie('event', 'PageView');
+
+function createCybbaPixel(src){
+    var input = document.createElement('img');
+    input.setAttribute('src',src);
+    input.setAttribute('width', 1);
+    input.setAttribute('height', 1);
+    input.setAttribute('alt', "");
+    input.setAttribute('style', "display:none !important;");
+    document.body.appendChild(input); 
+}
+var cybURL = window.location.href;
+try{
+
+ if(window.location.href.toLowerCase().indexOf("orderplaced") >= 0 && document.querySelector(".vtex-order-placed-2-x-orderNumber")){
+    var oN = document.querySelector(".vtex-order-placed-2-x-orderNumber").textContent.match(/[0-9A-Z\-]+$/)[0]; //jQuery("#thank-you .thankyou-total li:contains('Subtotal')")
+    var oV = document.querySelector(".vtex-order-placed-2-x-totalListItemValue").textContent.match(/[0-9.,]+/)[0].replace(",","");
+	if(document.querySelector(".vtex-order-placed-2-x-productName")){
+		if(document.querySelector(".vtex-order-placed-2-x-productName").textContent.match(/(moto 5G)|(moto stereo speaker)|(moto insta\-share projector)|(polaroid insta\-share printer)|(moto smart speaker with amazon alexa)|(jbl soundboost 2)|(moto 360 camera)|(moto gamepad)|(moto powerpack)|(hasselblad true zoom)|(jbl soundboost speaker)|(moto folio)|(moto style shell)|(moto turbopower pack)|(moto style shell)/)){
+			createCybbaPixel("//secure.adnxs.com/px?id=981029&seg=15634131&order_id="+oN+"&value="+oV+"&other=[USD]&t=2");
+		}else if(document.querySelector(".vtex-order-placed-2-x-productName").textContent.indexOf("moto z") >= 0){
+			createCybbaPixel("//secure.adnxs.com/px?id=981029&seg=14240546&order_id="+oN+"&value="+oV+"&other=[USD]&t=2");
+		}else{
+			createCybbaPixel("//secure.adnxs.com/px?id=981029&seg=12205489&order_id="+oN+"&value="+oV+"&other=[USD]&t=2");
+		}
+	}else{
+		createCybbaPixel("//secure.adnxs.com/px?id=981029&seg=12205489&order_id="+oN+"&value="+oV+"&other=[USD]&t=2");
+	}
+	pixie('event', 'Purchase'); 
+ }else if(window.location.href.toLowerCase().indexOf("cart") >= 0){
+   var cartProdInt = setInterval(function(){
+	 if(document.querySelector(".products-item-name a")){
+		if(jQuery(".products-item-name a").text().toLowerCase().indexOf("moto z") >= 0 && !document.querySelector("img[src*='16240636']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=16240636&t=2"); 
+		}else if(jQuery(".products-item-name a").text().toLowerCase().indexOf("moto g⁷") >= 0 && !document.querySelector("img[src*='17266134']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=17266134&t=2"); 
+		}else if(jQuery(".products-item-name a").text().toLowerCase().indexOf("motorola one") >= 0 && !document.querySelector("img[src*='18063856']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=18063856&t=2"); 
+		}else if(jQuery(".products-item-name a").text().toLowerCase().indexOf("moto e⁵ play") >= 0 && !document.querySelector("img[src*='18132499']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=18132499&t=2"); 
+		}else if(jQuery(".products-item-name a").text().toLowerCase().indexOf("moto z⁴") >= 0 && !document.querySelector("img[src*='18816320']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=18816320&t=2"); 
+		}else if(jQuery(".products-item-name a").text().toLowerCase().indexOf("zoom") >= 0 && !document.querySelector("img[src*='19259834']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=19259834&t=2"); 
+		}else if(jQuery(".products-item-name a").text().toLowerCase().indexOf("e⁶") >= 0 && !document.querySelector("img[src*='19259828']")){
+			createCybbaPixel("//secure.adnxs.com/seg?add=19259828&t=2"); 
+		}
+	 }
+   },1000);
+ }else if(window.location.href.toLowerCase().indexOf("products") >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12205471&t=2"); //APN Prod Pixel. Replace XXXXXX
+ }
+ if(cybURL.indexOf('insta-share-projector') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12362761&t=2");
+ }else if(cybURL.indexOf('products/moto-g-gen-7') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=17266133&t=2");
+ }else if(cybURL.indexOf('checkout') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12270678&t=2");
+ }else if(cybURL.indexOf('power-pack') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269103&t=2");
+ }else if(cybURL.indexOf('style-shell') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269095&t=2");
+ }else if(cybURL.indexOf('folio') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269083&t=2");
+ }else if(cybURL.indexOf('gamepad') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269061&t=2");
+ }else if(cybURL.indexOf('smart-speaker') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269045&t=2");
+ }else if(cybURL.indexOf('polaroid') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269034&t=2");
+ }else if(cybURL.indexOf('moto-e6') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=19259828&t=2");
+ }else if(cybURL.indexOf('turbopower') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12269015&t=2");
+ }else if(cybURL.indexOf('moto-360') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268978&t=2");
+ }else if(cybURL.indexOf('hasselblad') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268958&t=2");
+ }else if(cybURL.indexOf('jbl-soundboost-2-speaker') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268925&t=2");
+ }else if(cybURL.indexOf('jbl-soundboost-speaker') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268901&t=2");
+ }else if(cybURL.indexOf('moto-e') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268781&t=2");
+ }else if(cybURL.indexOf('moto-g') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268750&t=2");
+ }else if(cybURL.indexOf('moto-x') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268722&t=2");
+ }else if(cybURL.indexOf('moto-z') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=12268683&t=2");
+ }else if(cybURL.indexOf('motorola-one-zoom') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=19259834&t=2");
+ }else if(cybURL.indexOf('moto-e-gen-6') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=19259828&t=2");
+ }
+ if(cybURL.indexOf('g-gen-6') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=17119264&t=2");
+ }else if(cybURL.indexOf('g-play-gen-6') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=17119274&t=2");
+ }
+ if(cybURL.indexOf('moto-g7-power') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=21568758&t=2");
+ }
+ if(cybURL.indexOf('motorola-one-hyper') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=24081021&t=2");
+ }
+ if(cybURL.indexOf('motorola-edge') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=24081220&t=2");
+ }
+ if(cybURL.indexOf('motorola-one') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=18063847&t=2");
+ }if(cybURL.indexOf('moto-e-play-gen-5') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=18132492&t=2");
+ }if(cybURL.indexOf('motorola-one-action') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=19895497&t=2");
+ }if(cybURL.indexOf('smartphones-moto-g-power') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=21581303&t=2");
+ }if(cybURL.indexOf('moto-edge-plus') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=21877313&t=2");
+ }if(cybURL.indexOf('moto-g-stylus') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=21877343&t=2");
+ }
+ if(cybURL.indexOf('smartphones-razr') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=23064134&t=2");
+ }if(cybURL.indexOf('products-replacement-stylus-pen') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=23064133&t=2");
+ }if(cybURL.indexOf('motorola-edge-family') >= 0){
+    createCybbaPixel("//secure.adnxs.com/seg?add=23064131&t=2");
+ }
+
+ createCybbaPixel("//secure.adnxs.com/seg?add=12205454&t=2");
+
+}catch(e){}

@@ -1,0 +1,1052 @@
+* {
+    background-color: #001428;
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+ .top{ 
+    width: 203px;
+    height: 37px;
+    background-color: #3C444B;
+    margin-left: 400px;
+    margin-top:  -35px ;
+    margin-left: 805px;
+    border-radius: 10px;
+
+ } 
+ .search1{
+    justify-content: center;
+    /* border-radius: 30px; */
+    background: none;
+    width: 143px;
+    height: 33px;
+    margin-top: 8px;
+    position: absolute;
+    margin-left: 27px;
+    /* font-weight: 40px; */
+    color:#979899;
+    font-weight: lighter;
+    position: absolute;
+ 
+
+ }
+ .lence1{
+    background: url(Frame.png);
+    background-size: cover;
+    /* background-color: #82C1E9; */
+    height: 18px;
+    width: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* justify-content: center; */
+    float: right;
+    margin-right: 20px;
+    
+ }
+ 
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 89px;
+    background-color: #000A13;
+    margin: 0%;
+    z-index: 1;
+}
+
+.moto {
+    position: fixed;
+    margin-top: 0px;
+    background: none;
+    color: #fff;
+    margin-left: 35%;
+    text-size-adjust: 14px;
+
+}
+
+.moto_logo {
+    background-image: url(Vector\ \(1\).png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -436px;
+    background-size: cover;
+    
+    /* float: left; */
+
+
+}
+.one{
+    /* background-image: url(Vector\ \(3\).png); */
+    /* width: 10px; */
+    /* height: 10px; */
+    /* position: absolute; */
+    /* margin-top: 19px; */
+    /* margin-left: 120px; */
+    /* margin-left:436px; */
+    /* background-size: cover; */
+    /* float: left; */
+ 
+}
+#men{
+    /* margin-left: 120px; */
+/* padding-left:1000px ; */
+}
+
+.hea {
+    background: none;
+}
+
+.moto ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+    background: none;
+}
+
+.moto ul {
+    margin-left: -400px;
+    background: none;
+}
+
+.first_full_pic {
+    background-image: url(a4948a92-c731-4832-be63-282cae6c3bd7___4eefa19d1fcbaff80018a53afc18a48c.jpg.png);
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+.logo {
+    height: 395px;
+    width: 276px;
+
+    margin-left: 127px;
+    margin-top: 104px;
+    background-color: #9a9b9b;
+    background: url(20978299-e4aa-4bcc-9c07-1bd2f14a1427___c94ae2e81d5f34770315705208794575.svg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50;
+    left: 50;
+    color: #FFFFFF;
+
+}
+
+.flip {
+    /* margin-left: 132; 
+    margin-top: 178;
+    color: #82C1E9;
+     position:absolute; */
+
+    margin-left: 127px;
+    margin-top: 181px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-weight: 400;
+    background-color: #1B1E32;
+    font-size: 26px;
+
+    word-spacing: 0px;
+    font-variant: normal;
+    vertical-align: baseline;
+    text-decoration: non solid rgb(255, 255, 255);
+    text-indent: opx;
+
+
+
+
+}
+
+.now {
+    margin-left: 127px;
+    margin-top: 229px;
+    background-color: #1B1E32;
+    position: absolute;
+    color: rgb(255, 255, 255);
+
+    font-size: 18px;
+    line-height: 20.7px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    font-weight: 400;
+    text-decoration: rgb(255, 255, 255);
+    text-indent: 0px;
+    text-align: start;
+
+}
+
+.buy_now1 {
+    position: absolute;
+    margin-left: 127px;
+    margin-top: 280px;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    font-size: 13px;
+    border-color: rgb(250, 249, 249);
+    color: rgb(13, 12, 12);
+    background-color: rgb(240, 235, 235);
+    transition: none 0s ease 0s;
+    font-size: 13px;
+    line-height: 50px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+
+.items {
+    height: 40px;
+    width: 93%;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.items .box {
+    height: 100%;
+    width: 93%;
+    margin-top: 137px;
+    text-align: center;
+    color: #82C1E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20;
+
+    background-color: #0B1E32;
+
+    border: 1px solid #17293C;
+}
+
+.slash {
+    background-image: url(Group\ 8864.png);
+    width: 550px;
+    height: 3px;
+    background-size: cover;
+    margin-top: 352px;
+    position: absolute;
+    margin-left: 123px;
+
+}
+
+
+.three_boxes {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card {
+    margin-top: 100px;
+    height: 689px;
+    width: 380px;
+    background-color: #0B1E32;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box1 {
+    height: 689px;
+    width: 324.33px;
+    background-color: #0b1e32;
+    margin-top: 111px;
+    padding: 26px;
+    float: left;
+    margin-left: 48px;
+
+
+}
+
+.box2 {
+    height: 689px;
+    width: 324.33px;
+    background-color: #0b1e32;
+    margin-top: 111px;
+    padding: 26px;
+    float: left;
+    margin-left: 19px;
+}
+
+.box3 {
+    height: 689px;
+    width: 324.33px;
+    background-color: #0b1e32;
+    margin-top: 111px;
+    padding: 26px;
+    float: left;
+    margin-left: 19px;
+
+}
+
+.razr+ {
+    text-align: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: 32px; */
+    /* line-height: 36.8px; */
+    /* vertical-align: baseline; */
+    font-weight: 500;
+}
+
+.buy_now2 {
+    position: absolute;
+    margin-left: 127px;
+    margin-top: 65px;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* background-color: red; */
+    outline: 1px solid #fff;
+
+    font-size: 13px;
+    border-color: rgb(250, 249, 249);
+    color: #FFFFFF;
+    /* background-color: rgb(240, 235, 235);  */
+    transition: none 0s ease 0s;
+    font-size: 16px;
+    line-height: 18.4px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    font-weight: 500;
+}
+
+.small {
+    width: 424px;
+    height: 424px;
+
+}
+
+.box1_pic {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/163254/razr-40-ultra-ecom-render-1-phantom-black-.png?v=1774080476);
+    width: 300px;
+    height: 424px;
+    /* position: absolute; */
+    background-size: cover;
+    /* background-color: #0B1E32; */
+    background-size: cover;
+    background-position: center;
+    margin-top: 150px;
+    /* margin-left: 10px; */
+
+}
+
+.box2_pic {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/163152/moto-g-stylus-5g-na-pdp-ecom-kv-render-9a9y7yit.png?v=1774114209);
+    width: 300px;
+    height: 440px;
+    background-position: center;
+    /* position: absolute; */
+    background-size: cover;
+    background-color: #0B1E32;
+    /* margin-top: 100px; */
+}
+
+.box3_pic {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/163011/motorola-edge-40-pro-pdp-ecom-render-1-quartz-black-x6mr7rb6.png?v=1774116194);
+    width: 300px;
+    height: 440px;
+    background-position: center;
+    /* position: absolute; */
+    background-size: cover;
+    background-color: #0B1E32;
+    /* margin-top: 100px; */
+    /* margin-left: 40px; */
+    scale: 0.3;
+}
+
+.second_full_pic {
+    background-image: url(https://motorolaus.vtexassets.com/assets/vtex.file-manager-graphql/images/c92debaf-ffc7-4855-9e32-d1580c6fec98___12a90b79ec4f28bc01b1db397c31a2b2.jpg);
+    width: 100%;
+    height: 566px;
+    /* margin-top: 637px; */
+    background-size: cover;
+    background-position: center;
+    margin-top:  50px;
+
+
+}
+
+.moto_care_purchase_protection {
+    background-image: url(https://motorolaus.vtexassets.com/assets/vtex.file-manager-graphql/images/d2174d3a-1c81-4c4e-b3fa-edd44ca8fc00___37dfd6404c5b142d77f416732295628b.jpg);
+    width: 546px;
+    height: 544px;
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.moto_blog {
+    background-image: url(26528b9e-5ad5-4b7f-9a0b-f4520dd3f64a___3437da17b2753d6f27ba956d0ccc257f.jpg);
+    width: 717px;
+    height: 624px;
+
+    float: left;
+    background-size: cover;
+    /* margin-top: 150;   */
+    margin-top: 0;
+}
+
+.two_box {
+    width: 100%;
+    height: 624px;
+}
+
+.trending_now {
+    font-size: 30px;
+    line-height: 34.5px;
+    vertical-align: baseline;
+    font-weight: 500;
+
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 36px;
+}
+
+.five_box {
+    width: 100%;
+    height: 405px;
+    /* background-color: #FFFFFF; */
+
+}
+
+.photo1 {
+    width: 219.06px;
+    height: 405px;
+    margin-left: 48px;
+    background-color: #0B1E32;
+    float: left;
+
+}
+
+.photo2 {
+    width: 219.06px;
+    height: 405px;
+    margin-left: 18px;
+    background-color: #0B1E32;
+    float: left;
+
+}
+
+.photo3 {
+    width: 219.06px;
+    height: 405px;
+    margin-left: 18px;
+    background-color: #0B1E32;
+    float: left;
+
+}
+
+.photo4 {
+    width: 219.06px;
+    height: 405px;
+    margin-left: 18px;
+    background-color: #0B1E32;
+    float: left;
+
+}
+
+.photo5 {
+    width: 219.06px;
+    height: 405px;
+    margin-left: 18px;
+    background-color: #0B1E32;
+    float: left;
+}
+
+.pic_1 {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/163254-500-auto?v=1774147392&width=500&height=auto&aspect=true);
+
+    width: 192px;
+    height: 192px;
+    background-size: cover;
+    background-color: #0B1E32;
+    background-position: top;
+    margin-top: 23px;
+    margin-left: 12px;
+
+}
+
+.pic2 {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/163011-500-auto?v=1774149063&width=500&height=auto&aspect=true);
+    width: 192px;
+    height: 192px;
+    background-size: cover;
+    background-color: #0B1E32;
+    background-position: top;
+    margin-top: 23px;
+    margin-left: 12px;
+
+}
+
+.pic3 {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/162812-500-auto?v=1774144264&width=500&height=auto&aspect=true);
+    width: 192px;
+    height: 192px;
+    background-size: cover;
+    background-color: #0B1E32;
+    background-position: top;
+    margin-top: 23px;
+    margin-left: 12px;
+
+}
+
+.pic4 {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/162690-500-auto?v=1774142063&width=500&height=auto&aspect=true);
+    width: 192px;
+    height: 192px;
+    background-size: cover;
+    background-color: #0B1E32;
+    background-position: top;
+    margin-top: 23px;
+    margin-left: 12px;
+
+}
+
+.pic5 {
+    background-image: url(https://motorolaus.vtexassets.com/arquivos/ids/163152-500-auto?v=1774147466&width=500&height=auto&aspect=true);
+    width: 192px;
+    height: 192px;
+    background-size: cover;
+    background-color: #0B1E32;
+    background-position: top;
+
+    margin-top: 23px;
+    margin-left: 12px;
+
+}
+
+.searching {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 36px;
+    /* margin-left: 124px; */
+    justify-content: center;
+    margin-top: 40px;
+
+    display: flex;
+}
+
+
+
+.columns {
+    margin-top: 120px;
+    width: 100%;
+    height: 100px;
+    /* background: rgb(188, 117, 117); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_ {
+    /* background-color: gray; */
+    display: flex;
+    /* height: 50%; */
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_ {
+    /* background-color: rgb(57, 69, 208); */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* height: 50%; */
+    width: 70%;
+}
+
+.first_ h3,
+.second_ h3 {
+    background-color: #0B1E32;
+    padding: 5px;
+    border-radius: 30px;
+    outline: 1px solid #ffff;
+    margin: 5px;
+    font-size: 10px;
+    color: #C5CACE;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 11.5px;
+}
+
+.lence {
+    background: url(Vector.png);
+    background-size: cover;
+    /* background-color: #82C1E9; */
+    height: 18px;
+    width: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* justify-content: center; */
+}
+
+.search {
+    justify-content: center;
+    /* border-radius: 30px; */
+    background: none;
+    width: 143px;
+    height: 33px;
+    margin-top: -22px;
+    position: absolute;
+    margin-left: 30px;
+    /* font-weight: 40px; */
+    color: #fff;
+    font-weight: lighter;
+}
+
+.sbox {
+    height: 38px;
+    width: 400px;
+    background-color: #263748;
+    border-radius: 24px;
+    border: 1px #475563 solid;
+    /* opacity: 10%; */
+    /* margin-left: 100px; */
+    /* justify-content: center; */
+    position: relative;
+    left: 438px;
+    top: 30px;
+    text-align: center;
+}
+
+/* .srh{
+    color: white;
+
+} */
+.para {
+    width: 100%;
+    height: 274.59px;
+    background-color: #0C1F32;
+    background-image: url(Clip\ path\ group.png);
+    background-repeat: no-repeat;
+}
+
+.miss {
+    position: absolute;
+    margin-top: 77px;
+    margin-left: 489px;
+    background-color: #0C1F32;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.ebox {
+    height: 50px;
+    width: 564px;
+    background: none;
+    position: relative;
+    top: 142px;
+    left: 28.3%;
+}
+
+.ebox1 {
+    height: 50px;
+    width: 392px;
+    background: none;
+    float: left;
+    border-top: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    border-left: 1px #fff solid;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.ebox2 {
+    height: 50px;
+    width: 168px;
+    background-color: #FF554D;
+    float: left;
+    border-top: 1px #FF554D solid;
+    border-bottom: 1px #FF554D solid;
+    border-right: 1px #FF554D solid;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.e-mail {
+    background: none;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 16px;
+    font-weight: 100;
+}
+
+.subscribe {
+    background: none;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 16px;
+    font-weight: 100;
+}
+
+.i_agree {
+    float: left;
+    margin-top: 158px;
+    margin-left: 380px;
+    background: none;
+    color: #FFFFFF;
+    font-size: 12px;
+
+}
+
+.left {
+    position: fixed;
+    height: 32px;
+    width: 30.8px;
+    background-color: #FFFFFF;
+    /* background-image: url(Group\ \(1\).png); */
+    /* background-size: cover; */
+    border-radius: 0px 17px 17px 0px;
+    left: 10;
+    top: 130px;
+
+}
+
+.lpic {
+    height: 20px;
+    width: 16px;
+    background: none;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.feedback{
+    background-image: url(Link.png);
+    width: 39px;
+    height: 88px;
+    position: absolute;
+    margin-top: 249px;
+    left: 772px;
+     background-size: cover; 
+}
+
+.one {
+    width: 80px;
+    height: 20;
+    /* margin-top: 120px; */
+    /* margin-left: 50px; */
+    position: relative;
+    top: 210px;
+    left: 5px;
+
+}
+
+.pic_1_circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    background-color: #1E1F1F;
+    border: 1px #fff solid;
+    float: left;
+}
+
+.pic_1_circle2 {
+
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    background: none;
+    border: 1px #fff solid;
+    float: right;
+
+}
+
+.pic_1_circle3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    background: none;
+    border: 1px #fff solid;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.pic2_circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    /* background-color: yellow; */
+    border: 1px #fff solid;
+    /* top: 210px; */
+    /* left: 56px; */
+    margin-left: 87px;
+    margin-top: 210px;
+    position: absolute;
+}
+
+.clr1 {
+    background-color: #121417;
+
+}
+
+.clr2 {
+    background-color: #2B2C2C;
+
+}
+
+.clr3 {
+    background-color: #BB2649;
+
+}
+
+.clr4 {
+    background-color: #121417;
+
+}
+
+.gold {
+    margin-top: 80px;
+    line-height: 18.4px;
+    font: size 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background: none;
+    padding-left: 15px;
+}
+
+.number {
+    color: #BCBCBD;
+    background: none;
+    margin-top: 23px;
+    padding-left: 15px;
+}
+
+
+.paragraph {
+    /* font: size 12px;  */
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 300px;
+    background-color: #0D2033;
+    text-align: justify;
+    color: #fff;
+    padding-left: 70px;
+    padding-top: 28px;
+
+}
+
+.paragraph p {
+    background: none;
+}
+
+.first_line {}
+
+.second_line {
+    margin-left: 49px;
+}
+
+.third_line {
+    margin-left: 49px;
+}
+
+.fourth_line {
+    margin-left: 81px;
+}
+
+.four_line {
+    padding-top: 34px;
+    display: flex;
+    margin-left: 50px;
+    position: relative;
+    color: #fff;
+
+}
+
+.four_line ul h2 {
+    font-size: 16px;
+    line-height: 18.4px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.four_line ul li {
+    font-size: 12px;
+    list-style: none;
+    line-height: 13.8px;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #A9ADB1;
+}
+
+.last {
+    color: #C6C7C8;
+    padding-top: 45px;
+    font-size: 12px;
+    line-height: 13.8px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 81px;
+}
+
+.usa_logo {
+    background-image: url(Item.png);
+    width: 26px;
+    height: 16px;
+    background-size: cover;
+    float: right;
+
+}
+
+.usa {
+    font-size: 16px;
+    line-height: 18.4px;
+    font-weight: 400;
+
+    float: left;
+}
+
+.joint {
+    width: 74px;
+    height: 16px;
+    position: absolute;
+    bottom: -17%;
+    right: 52%;
+}
+
+.button {
+    width: 100%;
+    height: 70px;
+    background-color: #0B1E32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff
+}
+
+.stack {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #0B1E32;
+
+}
+
+.amount {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0B1E32;
+    margin-top: -39px;
+}
+
+.text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background-color:#0B1E32;
+}
+#spot{
+    background-color: #0B1E32;
+}
+
+.image {
+    width: 100%;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: white;
+
+}
+.three_boxes{
+    color: #0B1E32;
+}
+.bag{background-image: url(Vector\ \(3\).png);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-size: cover;
+    right: -47px;
+    top: 54px;
+
+}
+.human{
+    background-image: url(Vector\ \(2\).png);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-size: cover;
+    right: -88px;
+    top: 54px;
+
+}
+.doc{
+    background-image: url(31d77164-3f03-4060-b8cb-bc09407817a7___2d3233bbc31feac21bcbf4fa838cbdfc.png);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-size: cover;
+    right: -125px;
+    top: 54px;
+
+
+}
+.final{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    background-size: cover;
+    right: -169px;
+    top: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+
+}
+.min{
+    background-image: url(Group\ 8864\ \(3\).png);
+    width: 279px;
+    height: 3px;
+    background-size: cover;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: 496px;
+
+
+}
+
+.hea{
+    text-decoration: underline;
+}

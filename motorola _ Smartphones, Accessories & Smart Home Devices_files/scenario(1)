@@ -1,0 +1,146 @@
+window.DigitalFeedback['https://digitalfeedback.us.confirmit.com/api/digitalfeedback/loader/prod/scenario?programKey=ngwAGv&scenarioId=6827&programVersion=101'] = function (api) {
+var url = ""+document.location.href;
+var urllc = url.toLowerCase();
+/*
+var hns = ['motorola.fi','motorola.fr','motorola.com/th/','motorola.co.jp','motorola.com/tw/zh/','www.motorola.com/ph/','www.motorola.com/my/','www.motorola.com/hk/','www.motorola.com/kr/','www.motorola.fr','www.motorola.es','www.motorola.it','www.motorola.com.br','www.motorola.com.ar','www.motorola.com.co','www.motorola.com.mx','www.motorola.cl','www.motorola.pe','www.motorola.de','www.motorola.fr','www.motorola.it','www.motorola.es','www.motorola.com/nl','www.motorola.com/be/nl','www.motorola.com/be/fr','www.motorola.com/dk','www.moto.com/se','www.motorola.com/fi','www.motorola.com/bg','www.motorola.com/ro','www.motorola.com/rs','www.motorola.com/cz','www.motorola.com/pl','www.motorola.com/ru'];
+for( var i=0;i<hns.length;++i )
+{
+ if( urllc.indexOf( hns[i] ) != -1 )
+    {
+      console.log( 'CONF - ' + hns[i] + ' fb ns' );
+      return;
+    }
+}
+*/
+
+
+var showLog = true;
+var cfprefixString = "CONF - Moto Comment Card Invite: ";
+var mdl;
+var doSurvey = false;
+var lngcd;
+var flab;
+
+
+ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "check urls");
+
+var lngurls = [
+"motorola.ae|9|Feedback",
+"motorola.com/ph/|9|Feedback",
+"motorola.com/my/|9|Feedback",
+"motorola.com/hk/|31748|反饋",
+"motorola.com/kr/|18|피드백",
+"motorola.fr|12|Retour",
+"motorola.es|10|Comentarios",
+"motorola.com/it|16|feedback",
+"motorola.com.br|1046|Avaliação",
+"motorola.com.ar|10|Comentarios",
+"motorola.com.co|10|Comentarios",
+"motorola.com.mx|10|Comentarios",
+"motorola.cl|10|Comentarios",
+"motorola.pe|10|Comentarios",
+"motorola.com.pe|10|Comentarios",
+"motorola.de|7|Rückmeldung",
+"motorola.fr|12|Retour",
+"motorola.it|16|feedback",
+"motorola.es|10|Comentarios",
+"motorola.com/nl|19|feedback",
+"motorola.com/be/nl|19|feedback",
+"motorola.com/be/fr|12|Retour",
+"motorola.com/dk|6|feedback",
+"moto.com/se|29|Respons",
+"motorola.com/we/|9|Feedback",
+"motorola.com/fi|11|Palaute",
+"motorola.fi|11|Palaute",
+"motorola.com/bg|2|Обратна връзка",
+"motorola.com/ro|24|părere",
+"motorola.com/rs|26|Повратна информација",
+"motorola.com/cz|5|zpětná vazba",
+"motorola.com/pl|21|Opinia",
+"motorola.com/ru|25|Обратная связь",
+"motorola.com/sk|27|spätná väzba",
+]
+
+for(var i=0;i<lngurls.length;++i)
+{
+	lngA = lngurls[i].split("|");
+	var chkurllc = lngA[0].toLowerCase();
+	
+	if( urllc.indexOf( chkurllc ) != -1 )
+	{
+		lngcd = lngA[1];
+		flab = lngA[2];
+		doSurvey = true;
+		console.log( 'CONF - ' + chkurllc + ' match found.  lng: ' +lngcd );
+		console.log( 'CONF - ' + chkurllc + ' match found.  label: ' +flab );
+		break;
+	}
+}
+
+
+if( !doSurvey )
+{
+	ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "check locale");
+
+	try {
+	  mdl = motoDataLayer.locale;
+	} catch (e) {
+	  ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "motoDataLayer Missing");
+	}
+
+	if (mdl) {
+		var mdllc = mdl.toLowerCase();
+		switch( mdllc )
+		{
+		case "us": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		case "in": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		case "ca-en": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		case "ca-fr": lngcd = "12"; flab="Retour"; doSurvey = true; break;
+		case "ae": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		case "au": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		case "nz": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		case "th": lngcd = "30"; flab="ข้อเสนอแนะ"; doSurvey = true; break;
+		case "jp": lngcd = "17"; flab="Fīdobakku"; doSurvey = true; break;
+		case "tw-zh": lngcd = "31748"; flab="反饋"; doSurvey = true; break;
+		case "uk": lngcd = "9"; flab="Feedback"; doSurvey = true; break;
+		}
+		ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "locale check run.  doSurvey: " + doSurvey);
+	}
+
+}
+
+if( flab == "X" )
+{
+	ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "Feedback label not tranlated.  Exiting.");
+    return;
+}
+
+
+if (doSurvey) {
+
+  ConfirmitHelper.lngcd = lngcd;
+  ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "show fb tab");
+  var dObj = {};
+
+  dObj.loc = urllc;
+  if( mdl )
+  {
+    dObj.mdl = mdllc;
+  }
+
+  var ctx = api()
+    ctx.invite('Feedback Tab')
+    ctx.survey('p872518358847')
+    ctx.show();
+	
+ctx.events.showInvite.on(
+  function() { 
+     console.log("set tab label")
+    document.getElementById('cffbtb').innerHTML = flab;
+  });
+
+} else {
+  ConfirmitHelper.ConfirmitLog(showLog, cfprefixString + "do now show fb tab");
+}
+
+};
